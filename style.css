@@ -1,0 +1,1054 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+    
+}
+
+/* #header {
+    width: 80%;
+    height: 50vh;
+    background-image: url(images/RitikAgrawal\ Profile\ Pic\ without\ background_half.png);
+
+    background-size: cover;
+    background-position: center top;
+
+    background-repeat: no-repeat;
+    margin-left: 300px;
+} */
+
+
+
+
+.header {
+    margin-left: 100px;
+    padding: 20px;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+
+
+
+.header-Image img
+{
+   object-fit:cover;
+}
+
+.header-text {
+
+    font-size: 30px;
+}
+
+
+
+
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20%;
+
+
+}
+
+
+.header-text h1 span {
+    color: #ff004f;
+}
+
+.home
+{
+    width:85%;
+}
+
+
+.logo {
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    float: left;
+    /* Float the logo to the left */
+    margin-left: 40px;
+    /* Add margin to separate the logo and the navigation menu */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    padding: 0px;
+    margin-right: 40px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.summary 
+{
+    font-size:18px;
+}
+
+.summary span
+{
+    color: #ff004f;
+}
+
+.social-icons-div
+{
+    justify-content: center;
+    place-items: center;
+}
+
+.contact-icons-div
+{
+    justify-content: left;
+    place-items: left;
+}
+.social-icons
+{
+    list-style: none;
+    display: flex;
+}
+
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 8px 6px aqua;
+    border-radius: 50%;
+ 
+}
+
+.social-icons li a i{
+    font-size: 1.5rem;;
+    padding:10px;
+    border-radius: 50%;
+  
+}
+
+
+
+
+
+
+
+/*  *************************   about   ******************************/
+
+
+#about 
+{
+    padding: 30px 0px;
+    margin-left: 10%;
+    margin-right: 20px;
+    margin-top:40px;
+    margin-bottom:40px;
+    padding: 80px 0;
+    /* color: #ababab; */
+}
+#about .container {
+    margin-left:1%;
+    margin-right: 20px;
+
+}
+
+
+
+#about .container h1  
+{
+    margin-bottom:30px;
+}
+
+
+
+
+.about-col {
+    flex-basis: 60%;
+    margin-left: 20px;
+    text-align: left;
+    padding: 10px 30px;
+
+}
+
+.about-col h1 {
+    margin-bottom: 20px;
+}
+
+.about-col p {
+    font-size: 18px;
+    font-weight:400;
+}
+
+.sub-title {
+    font-weight: 550;
+    font-size: 50px;
+    text-align:center;
+    color: #fff;
+}
+
+.tab-tiles {
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 18px;
+
+}
+
+.tab-contents ul li span {
+    color: #b54769;
+    font-size: 18px;
+    /* font-weight: 700; */
+
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+/*         *********************     Experience *************************  */
+
+.timeline
+{
+    position:relative;
+    width: 75%;
+    
+}
+
+.timeline-box
+{
+    position: relative;
+    margin:5px;
+    width: 40%;
+    left:5%;
+    min-height: 150px;
+    border: 1px solid ;
+    box-shadow:1px 1px 1px 1px black ;
+    border-radius:10%;
+    padding:1%;
+    
+}
+
+.timeline-box:nth-child(2n+1)::after 
+{
+    content:"";
+    position:absolute;
+    top:30%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color:gray;
+    right:-7.8%;
+    z-index:1;
+}
+.timeline-box:nth-child(2n)::after 
+{
+    content:"";
+    position:absolute;
+    top:30%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color:gray;
+    left:-9.3%;
+    z-index: 1;
+}
+
+
+.timeline-box:nth-child(2n){
+  left: 53%;
+
+}
+
+.timeline-divider 
+{
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border:3px dashed #0096fa6b;
+    top:10%;
+    left:50%;
+}
+
+.timeline-traveller
+{
+    position: sticky;
+    top:30%;
+    transform: rotate(90deg);
+}
+
+.timeline-box h4
+{
+    color:orange;
+    font-weight:700;
+}
+
+.timeline-box p
+{
+    color:rgb(31, 25, 25);
+    font-weight:400;
+}
+
+.icon-symbol
+{
+    color: #ff004f;
+}
+
+
+
+
+
+#experience {
+    padding: 30px 0px;
+    margin-left: 7%;
+    margin-right: 5%;
+    margin-top:40px;
+}
+
+.experience-box .Logo-Name 
+{
+    display:flex;
+    /* place-content: center; */
+    
+    place-items: center;
+}
+
+.experience-box .Logo-Name a 
+{
+    margin-left:0px;
+}
+.experience-box .designation-time
+{
+    display:flex;
+    justify-content: space-between;
+    object-fit: contain;
+    align-content: center;;
+    
+    place-items: center;
+    align-items: center;
+    margin-bottom:20px;
+}
+
+.experience-box .timePlace 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right:0px;
+    
+}
+.experience-box .timePlace h4 
+{
+    margin:0px;
+    padding:0px;
+    font-size:15px;
+}
+
+.experience-list {
+    position: relative;
+    width: 85%;
+    grid-gap: 40px;
+    margin-top: 30px;
+    list-style: none;
+}
+
+.experience-list > div {
+    background: #262626;
+    padding: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.experience-list> div i {
+    font-size: 35px;
+}
+
+.experience-list> div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.experience-list> div h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.experience-list> div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.experience-list> div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+.experience-list h2 {
+    margin-bottom: 20px;
+}
+
+.experience-list ul li {
+    margin-bottom: 10px;
+}
+
+.experience-list ul li span 
+{
+    color:#ff004f;
+}
+.experience-box:hover ul li span {
+    color: black;
+}
+.experience-list i {
+    margin-bottom: 20px;
+}
+.experience-list img {
+    margin-bottom: 20px;
+    margin-right:10px;
+    width:20%;
+    height:20%;
+    border-radius: 50%;
+}
+
+.experience-box {
+    position: relative;
+    width: 50%;
+}
+
+.experience-box:nth-child(2n) {
+    left: 62%;
+}
+
+
+
+
+
+.experience-box:nth-child(2n+1)::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #ff004f;
+    right: -6%;
+    z-index: 1;
+}
+
+.experience-box:nth-child(2n)::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #ff004f;
+    left: -9.3%;
+    z-index: 1;
+}
+
+.experience-list .experience-divider {
+    position: absolute;
+    height: 70%;
+    width: 0%;
+    border: 3px dashed #0096fa6b;
+    top: 5%;
+    left: 55%;
+    padding: 0px;
+    
+
+}
+
+.experience-traveller {
+    position: sticky;
+    top: 30%;
+    bottom:2%;
+    color:#ff004f;
+    transform: rotate(90deg); 
+    /* animation: movePlane 5s linear infinite; */
+}
+
+.experience-list .experience-traveller i {
+    margin:0px;
+    padding:0px;
+    
+}
+
+.experience-list .expLinkIcon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    margin:20px;
+    border-radius: 50%;
+    background-color: #ff004f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+.experience-list .expLinkIcon1 {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    margin:3px;
+    border-radius: 50%;
+    background-color: #ff004f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+
+.experience-list .experience-box:hover .expLinkIcon
+{
+    color: #ff004f;
+    background-color: white;
+}
+
+.experience-list .experience-box:hover .expLinkIcon1
+{
+    color: #ff004f;
+    background-color: white;
+}
+
+
+
+/*         ***********************   services  ************************** */
+
+
+
+    
+.logo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #000;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+.logo-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.logo-item {
+    text-align: center;
+    margin-top: 20px;
+    width: 30%; /* Ensures at least three items in one line */
+}
+.logo-item img {
+    width: 60px; /* Make images smaller */
+    height: 60px;
+}
+.logo-item p {
+    margin-top: 10px;
+}
+
+.slider {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none;
+    width: 80%; /* Full width */
+    height: 8px; /* Track height */
+    background: #fff; /* Track color */
+    outline: none;
+    opacity: 1;
+    transition: opacity .2s;
+    border-radius: 4px; /* Semi-circular ends */
+    overflow: hidden;
+}
+.slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 4px;
+}
+.slider::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: white;
+    border-radius: 4px;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* Thumb width */
+    height: 20px; /* Thumb height */
+    background: #ff004f; /* Thumb color */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 50%; /* Rounded thumb */
+    box-shadow: -100vw 0 0 100vw #ff004f; /* Color the filled part */
+}
+.slider::-moz-range-thumb {
+    width: 20px; /* Thumb width */
+    height: 20px; /* Thumb height */
+    background: #ff004f; /* Thumb color */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 50%; /* Rounded thumb */
+}
+.slider:disabled::-webkit-slider-thumb {
+    background: #ff004f; /* Thumb color for disabled state */
+    box-shadow: -100vw 0 0 100vw #ff004f; /* Color the filled part */
+}
+.slider:disabled::-moz-range-thumb {
+    background: #ff004f; /* Thumb color for */
+}
+
+
+#home
+{
+    padding: 30px 0px;
+    margin-left: 12%;
+    margin-right: 20px;
+    margin-top:40px;
+}
+
+#services {
+    padding: 30px 0px;
+    margin-left: 7%;
+    margin-right: 5%;
+    margin-top:40px;
+}
+
+.services-list {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); */
+    grid-template-columns: repeat(2,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 30px;
+    text-align: center;
+
+    list-style: none;
+
+}
+
+.services-list h2 {
+
+    margin-bottom: 20px;
+}
+
+.services-list ul li {
+    margin-bottom: 10px;
+}
+
+.services-list i {
+    margin-bottom: 20px;
+}
+
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 10px;
+   
+    
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 35px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+.header {
+    margin-left: 200px;
+    padding: 20px;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+
+
+
+.header-Image img
+{
+   object-fit:cover;
+}
+
+.header-text {
+
+    font-size: 30px;
+    text-align: justify;
+}
+
+
+
+
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20%;
+
+
+}
+
+.header-list div{
+    background-color: #000;
+}
+
+.header-list div:hover{
+    background-color: #000;
+    transform: translateY(0px);
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
+
+
+
+
+/*---------------- portfolio  ------------------------*/
+#portfolio {
+    padding: 50px 0;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 30px;
+}
+
+.work {
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40 px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.layer  ul
+{   list-style: disc;
+    text-align: left;
+    margin-left:20px;
+    
+}
+.layer ul li {
+    margin-bottom: 10px; /* Adjust the value for more or less spacing */
+  }
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+
+
+
+/* *********************  Contact Me  ************************/
+#contact {
+    margin-left: 7%;
+    margin-right: 5%;
+}
+
+.contact-left {
+    flex-basis: 35%;
+
+
+}
+
+.contact-left .sub-title {
+    margin-bottom: 30px;
+}
+
+.contact-left p i {
+    width: 10px;
+    margin-right: 20px;
+    margin-top: 25px;
+    color: #ababab;
+
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+
+.contact-left p {
+    font-size: 20px;
+}
+
+.social-icons {
+    margin-top: 25px;
+
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: #ff004f;
+    transition: transform 0.5s;
+
+}
+
+.btn.btn2:hover {
+    transform: translateY(-5px);
+    color: #ababab;
+}
+
+.contact-right form {
+    width: 100%;
+
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+form .btn2:hover {
+    transform: translateY(-5px);
+    color: #ababab;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+nav .fas {
+    display: none;
+}
+
+/* ---------------------------------   CSS for small screens   --------------------------*/
+@media only screen and (max-width:600px){
+    #header {
+        
+        background-image: url(images/RitikAgrawal\ Profile\ Pic\ without\ background_Mobile.png);
+        
+        
+    }
+    .header-text{
+        margin-top:100%;
+        font-size:16px;
+        
+    }
+    .header-text h1{
+        font-size:30px;
+        
+    }
+}
+#msg {
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
